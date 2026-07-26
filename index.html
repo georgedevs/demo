@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hello-deploy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <span class="prompt">~/intern-project</span>
+    <span class="prompt-cmd">git push origin main</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">workshop demo · edit me live</p>
+      <h1 id="headline">You just shipped this page.</h1>
+      <p class="sub">
+        Every time this repo gets a new commit on <code>main</code>, Vercel notices,
+        rebuilds the site, and puts the new version online automatically.
+        No manual upload. That's the whole trick.
+      </p>
+
+      <button id="ship-btn">Make a change </button>
+    </section>
+
+    <section class="log-panel">
+      <div class="log-panel-head">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="log-title">commit log</span>
+      </div>
+      <ul id="commit-log" class="log-list">
+        <li class="log-entry">
+          <span class="log-hash">a1c9e2f</span>
+          <span class="log-msg">Initial commit</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>build <span id="build-number">v1</span></span>
+    <span id="deploy-time">not deployed yet</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
